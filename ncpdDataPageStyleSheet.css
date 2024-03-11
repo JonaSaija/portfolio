@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+body{
+  background-image: url(/Assets/NcpdDataPageBg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: block;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: "Cyber", sans-serif;
+}
+
+main{
+  display: block;
+  align-items: center;
+  margin: 0px auto;
+  height: 900px;
+  width: 800px;
+}
+
+.Title{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  margin: 0px 47px ;
+  background-color: rgba(1, 24, 66, 0.911);
+
+  border-top-style: solid;
+  border-top-color:rgb(0, 118, 139);
+  border-right-style: solid;
+  border-right-color:rgb(0, 118, 139);
+  border-left-style: solid;
+  border-left-color:rgb(0, 118, 139);
+  box-shadow: 0 0 50px rgb(92, 191, 248);
+  
+  color: rgb(0, 247, 255);
+  text-shadow: 0px 0px 15px rgb(92, 191, 248);
+}
+
+.MainInfo{
+  display: block;
+  margin: 0px auto;
+  height: 859px;
+  width: 700px;
+  background-color: rgba(1, 24, 66, 0.911);
+  border-top-style: solid;
+  border-top-color: rgb(0, 118, 139);
+  border-right-style: solid;
+  border-right-color: rgb(0, 118, 139);
+  border-left-style: solid;
+  border-left-color: rgb(0, 118, 139);
+  box-shadow: 0 0 50px rgb(92, 191, 248);
+  
+  z-index: -1;
+  color: rgb(0, 247, 255);
+}
+
+.SubInfoHeaders{
+  margin: 10px 20px auto;
+  color: rgba(107, 107, 107, 0.836);
+  font-size: 22.5px;
+}
+
+.Name{
+  margin: 10px 20px auto;
+  color: yellow;
+  font-size: 35px;
+  text-shadow:0px 0px 15px red;
+}
+
+.AffiliationName{
+  margin: 10px 20px auto;
+  color: rgb(0, 247, 255);
+  font-size: 35px;
+}
+
+.WantedNCPic{
+  margin: 15px 80px auto;
+  width: 250px;
+}
+
+.SmallInfo{
+  margin: -230px 0px 120px 400px;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.TextInfo{
+  margin: 0px 0px 0px 0px;
+  width: 100px;
+  font-size: 22.5px;
+}
+
+.MoneyText{
+  color: yellow;
+  text-shadow: 0px 0px 15px red;
+  margin: 2px 0px 12px 0px;
+  font-size: 24.5px;
+}
+
+.GreenText{
+  color: rgb(81, 180, 81);
+  margin: 0px 0px 0px 0px;
+  font-size: 24.5px;
+}
+
+.RewardText{
+  margin: 0px 0px 0px 0px;
+}
+
+.BountyText{
+  margin: 0px 0px 0px 0px;
+  width: 145px;
+}
+
+.BountyClassText{
+  color: rgb(0, 247, 255);
+  text-shadow: 0px 0px 15px rgb(92, 191, 248);
+  font-size: 40px;
+  margin: 0px;
+}
+
+.WantedForText{
+  margin:auto 24px;
+
+  font-size: 20px;
+  color: rgb(0, 247, 255);
+}
+
+.ButtonCv{
+  position: relative;
+  margin: 100px auto auto 200px;
+  z-index: +2;
+}
+
+.MoreInfoText{
+  margin: 10px 213px -53px 30px;
+  font-size: 20px;
+}

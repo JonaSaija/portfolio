@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+nav{
+  justify-content: center;
+  position: relative ;
+  display: flex;
+  width: 900px;
+  height: 940px;
+  margin: auto;
+  font-size: 20px;
+}
+
+body{
+  display: fixed;
+  margin:auto;
+  align-items: center;
+  font-family: 'Cyber', sans-serif;
+}
+
+.profile-column {
+  text-align: center;
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.pPicture{
+  min-width: 200px;
+  height: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.menuTable{
+  position: fixed;
+  border-collapse: collapse;
+  margin: 200px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 50px purple;
+  backdrop-filter: blur(3px);
+}
+
+.menuTable, th,
+td {
+  padding: 12px 15px;
+}
+
+.menuTable, tbody tr {
+  border-bottom: 1px;
+}
+
