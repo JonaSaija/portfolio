@@ -5,4 +5,10 @@ section{
   right: 300px;
   height: 800px;
   width: 600px;
+  color: rgba(255, 68, 68, 0.842);
+  text-shadow: 0 0 15px rgb(255, 122, 122);
+}
+
+.title{
+  color: rgb(0, 247, 255);
 }
