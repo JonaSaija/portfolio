@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+body{
+  margin: 0px 0px 0px 320px;
+  height: 800px;
+  font-family: 'Cyber',sans-serif;
+  background-image: url(../Assets/CyberpunkBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+main{
+  position: relative;
+  left: 40px;
+  top: 100px;
+  height: 800px;
+  width: 1500px;
+}
+
+.ContactPic-img{
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.NonTextLeft{
+  font-size: 10px;
+  margin: 0px auto 0px 0px;
+  width: 100px;
+  color: rgb(255, 68, 68);
+  text-shadow: 0px 0px 15px rgb(255, 68, 68);
+}
+
+.NonTextRight{
+  position: relative;
+  top: 23px;
+  left: 1200px;
+  font-size: 10px;
+  width: 70px;
+  color: rgb(255, 68, 68);
+  text-shadow: 0px 0px 15px rgb(255, 68, 68);
+}
+
+.Title{
+  border-color: rgba(255, 68, 68, 0.616);
+  padding-left: 10px;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.699);
+  width: 1241px;
+  font-size: 25px;
+  margin: 0px auto 0px 0px;
+  color: rgb(0, 247, 255);
+}
+
+.ScrollContact{
+  position: relative;
+  top: 7px;
+  left: 960px;
+  width: 300px;
+  height: 100px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* For WebKit-based browsers like Chrome and Safari */
+    &::-webkit-scrollbar {
+      width: 12px;
+      /* Adjust the width as needed */
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: rgba(151, 2, 2, 0.842);
+      /* Color of the scrollbar track */
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(231, 42, 42);
+      /* Color of the scrollbar thumb */
+      border-radius: 6px;
+      /* Roundness of the scrollbar thumb */
+      box-shadow: 0px 0px 16px 20px rgb(255, 68, 68, 88%);
+      /* Shadow properties */
+    }
+}
+
+.ContactInfo-button{
+  font-size: 20px;
+  font-family: 'Cyber', sans-serif;
+  width: 200px;
+  margin: 5px auto;
+  background-color: transparent;
+  text-align: start;
+    border: none;
+}
+.ContactInfo-button:hover {
+  background-color: rgb(0, 247, 255);
+}
+a{
+  color: rgb(255, 68, 68);
+  text-shadow: 0px 0px 15px rgb(255, 68, 68);
+  text-decoration: none;
+}
+
+.Phone-img{
+  position: relative;
+  top: 75px;
+  right: 50px;
+  width: 50px;
+  height: 70px;
+}
+
+.ContactPic-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ContactPic-list li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  /* Adjust opacity as needed */
+}
+
+/* Adjust z-index to stack images behind each other */
+.ContactPic-list li:nth-child(1) {
+  z-index: 3;
+  top: 200px;
+  left: 10px;
+}
+
+.ContactPic-list li:nth-child(2) {
+  z-index: 2;
+  top: 180px;
+  left: 30px;
+}
+
+.ContactPic-list li:nth-child(3) {
+  z-index: 1;
+  top: 160px;
+  left: 50px;
+}
+.ContactPic-list li:nth-child(4) {
+  z-index: 1;
+  top: 140px;
+  left: 70px;
+}
