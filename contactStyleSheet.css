@@ -28,6 +28,7 @@ main{
   left: 100px;
   width: 300px;
   height: 300px;
+  /* transform: rotate3d(1, 10, 1, 0.8888rad) */
 }
 
 .NonTextLeft{

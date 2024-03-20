@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+body {
+  margin: auto;
+  font-family: "Cyber", sans-serif;
+
+  background-image: url(../../portfolio/Assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.TimelineBG {
+  margin: 100px auto auto 350px;
+  display: block;
+  background-image: url(../../portfolio/Assets/JonaTimelinePortfolio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(252, 236, 10, 0.822); */
+  box-shadow: 0px 0px 20px 6px yellow;
+  height: 800px;
+  width: 1500px;
+}
