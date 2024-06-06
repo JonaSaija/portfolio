@@ -71,12 +71,13 @@
     </nav>
 
 <body>
+  <!--The clickable cards for deferent projects-->
   <nav class="SearchForScroll">
     <a href="#page-1" class="SearchLinkText">Game Development</a>
     <a href="#page-2" class="SearchLinkText">Web Development</a>
     <a href="#page-3" class="SearchLinkText">Other</a>
   </nav>
-  <main>
+  <>
     <div class="ScrollGigs">
       <div class="ProjectCardHeader" id="page-1">Game Development</div>
         <div class="ProjectCard" name="Pong">
@@ -132,14 +133,14 @@
         
         
       <div class="ProjectCardHeader" id="page-2">Web Development</div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
+        <div class="ProjectCard" name="BlackJack">
+          <button id="blackjack-button" class="GigButton">
+            GIG: Black Jack
           </button>
         </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
+        <div class="ProjectCard" name="PortfolioSite">
+          <button id="portfolio-button" class="GigButton">
+            GIG: Portfolio site
           </button>
         </div>
         <div class="ProjectCard" name="Test">
@@ -190,7 +191,8 @@
           </button>
         </div>
       </div>
-
+      
+    <!--Detailed information on the deferent projects-->
     <section id="pong-content" class="display-none">
       <h3 class="title">Pong</h3>
       <img url="./Assets/pong.png" alt="Pong picture"/>
@@ -206,6 +208,32 @@
             
             <a href="https://coconut-conga-1d2.notion.site/P1-2-Programmeren-OOP-3bec3599a28944b084cfe83fa5cfe4e0?pvs=4" target="_blank">
                 <span class="button-text">Click here</span>
+            </a>
+    </section>
+
+    <section id="blackjack-content" class="display-none">
+      <h3 class="title">Black Jack</h3>
+      <img url="./Assets/blackJack.png" alt="Pong picture"/>
+         <p>
+            We needed to make a remake for pong with our own twist to it. So i was planning to make the ball a friends head the ball and in a picture further down you can see that. And i also made the sticks you play with trashcans and at last i edited the background. This was the first ever project we had to make for school.
+            <p></p>
+            It was made on a custom engine that school made it was called canvas enigne but we did use c# for it to code. It was also the first ever time i had programmed in my life exept for the entice test we needed to make to get acepted in the school.
+            <p></p>    
+            But it was verry fun to learn about the details of c# and it was cool to learn a new language. I sadly dont have any more scripts of this project. I only have the screenshot down below.
+            </p>
+            </a>
+    </section>
+
+    <section id="portfolio-content" class="display-none">
+      <h3 class="title">Portfolio site</h3>
+      <img url="./Assets/portfolio.png" alt="Pong picture"/>
+         <p>
+            We needed to make a remake for pong with our own twist to it. So i was planning to make the ball a friends head the ball and in a picture further down you can see that. And i also made the sticks you play with trashcans and at last i edited the background. This was the first ever project we had to make for school.
+            <p></p>
+            It was made on a custom engine that school made it was called canvas enigne but we did use c# for it to code. It was also the first ever time i had programmed in my life exept for the entice test we needed to make to get acepted in the school.
+            <p></p>    
+            But it was verry fun to learn about the details of c# and it was cool to learn a new language. I sadly dont have any more scripts of this project. I only have the screenshot down below.
+            </p>
             </a>
     </section>
     
@@ -252,6 +280,8 @@
   <footer>
 
   </footer>
+
+  <!--Logic for opening the project cards-->
   <script>
     const pongButton = document.getElementById('pong-button')
     const pongContent = document.getElementById('pong-content')
@@ -261,6 +291,12 @@
 
     const rootsyButton = document.getElementById('rootsy-button')
     const rootsyContent = document.getElementById('rootsy-content')
+
+    const blackJackButton = document.getElementById('blackjack-button')
+    const blackJackContent = document.getElementById('blackjack-content')
+
+    const portfolioButton = document.getElementById('portfolio-button')
+    const portfolioContent = document.getElementById('portfolio-content')
 
     const asyncmultiplayerButton = document.getElementById('asyncmultiplayer-button')
     const asyncmultiplayerContent = document.getElementById('asyncmultiplayer-content')
@@ -273,6 +309,8 @@
         twinStickContent,
         rootsyContent,
         asyncmultiplayerContent,
+        blackJackContent,
+        portfolioContent,
         testContent
     }
 
@@ -282,6 +320,14 @@
 
     twinStickButton.addEventListener('click', () => {
       toggleContent(elementContents.twinStickContent)
+    })
+
+    blackJackButton.addEventListener('click', () => {
+      toggleContent(elementContents.blackJackContent)
+    })
+
+    portfolioButton.addEventListener('click', () => {
+      toggleContent(elementContents.portfolioContent)
     })
 
     rootsyButton.addEventListener('click', () => {
