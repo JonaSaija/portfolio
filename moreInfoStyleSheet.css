@@ -1,5 +1,5 @@
-section{
-  background-color: blue;
+section {
+  background-color: rgba(0, 0, 255, 0.363);
   position: absolute;
   top: 70px;
   right: 300px;
@@ -9,6 +9,6 @@ section{
   text-shadow: 0 0 15px rgb(255, 122, 122);
 }
 
-.title{
+.title {
   color: rgb(0, 247, 255);
 }
