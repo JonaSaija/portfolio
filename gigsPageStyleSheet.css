@@ -4,10 +4,10 @@
   font-display: swap;
 }
 
-body{
+body {
   background-image: url(../portfolio/Assets/GigsCyberpunkBg.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   display: block;
   margin: auto;
   min-height: 100%;
@@ -15,7 +15,7 @@ body{
   font-family: "Cyber", sans-serif;
 }
 
-main{
+main {
   display: block;
   align-items: center;
   margin: 0px 0px auto 300px;
@@ -23,7 +23,7 @@ main{
   width: 1620px;
 }
 
-.MainInfo{
+.MainInfo {
   display: block;
   margin: 0px auto;
   height: 820px;
@@ -31,12 +31,12 @@ main{
   background-color: rgba(94, 0, 0, 0.459);
   border: solid rgb(255, 68, 68);
   box-shadow: 0 0 50px rgb(255, 68, 68);
-  
+
   z-index: -1;
   color: rgb(0, 247, 255);
 }
 
-.ScrollGigs{
+.ScrollGigs {
   position: absolute;
   top: 100px;
   left: 350px;
@@ -47,27 +47,27 @@ main{
   scroll-behavior: smooth;
 
   /* For WebKit-based browsers like Chrome and Safari */
-    &::-webkit-scrollbar {
-      width: 12px;
-      /* Adjust the width as needed */
-    }
-  
-    &::-webkit-scrollbar-track {
-      background-color: rgba(151, 2, 2, 0.842);
-      /* Color of the scrollbar track */
-    }
-  
-    &::-webkit-scrollbar-thumb {
-      background-color: rgb(231, 42, 42);
-      /* Color of the scrollbar thumb */
-      border-radius: 6px;
-      /* Roundness of the scrollbar thumb */
-      box-shadow: 0px 0px 16px 20px rgb(255, 68, 68, 88%);
-      /* Shadow properties */
-    }
+  &::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width as needed */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(151, 2, 2, 0.842);
+    /* Color of the scrollbar track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 42, 42);
+    /* Color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Roundness of the scrollbar thumb */
+    box-shadow: 0px 0px 16px 20px rgb(255, 68, 68, 88%);
+    /* Shadow properties */
+  }
 }
 
-.SearchForScroll{
+.SearchForScroll {
   background-color: rgba(255, 0, 0, 0.288);
 
   position: absolute;
@@ -77,16 +77,16 @@ main{
   width: 500px;
 }
 
-.ProjectCard{
+.ProjectCard {
   height: 100px;
   width: 100%;
   margin: 5px 0px 5px 0px;
 
   background-color: rgba(0, 0, 0, 0.781);
-  color: rgb(0, 247, 255);
+  color: rgba(0, 247, 255, 0.432);
 }
 
-.ProjectCardHeader{
+.ProjectCardHeader {
   margin: 5px 0px 5px 0px;
   font-size: 40px;
   height: 70px;
@@ -96,22 +96,22 @@ main{
   text-shadow: 0 0 15px rgb(255, 122, 122);
 }
 
-.GigButton{
+.GigButton {
   font-size: 20px;
-  font-family: 'Cyber', sans-serif;
+  font-family: "Cyber", sans-serif;
   background-color: transparent;
   height: 100px;
   width: 100%;
   border-color: transparent;
   color: rgb(0, 247, 255);
-  text-align:justify ;
+  text-align: justify;
 }
 
 .GigButton:hover {
   background-color: rgba(255, 65, 65, 0.438);
 }
 
-.SearchLinkText{
+.SearchLinkText {
   margin: 0px 52px 0px 20px;
   font-size: 16px;
   color: rgb(0, 247, 255);
