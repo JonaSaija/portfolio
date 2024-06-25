@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(../portfolio/Assets/GigsCyberpunkBg.jpg);
+  background-color: rgb(46, 1, 1);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;

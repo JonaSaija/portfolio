@@ -99,91 +99,22 @@
             GIG: ASYNCMULTIPLAYER
           </button>
         </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
         
         
       <div class="ProjectCardHeader" id="page-2">Web Development</div>
         <div class="ProjectCard" name="BlackJack">
           <button id="blackjack-button" class="GigButton">
-            GIG: Black Jack
+            GIG: BLACK JACK
           </button>
         </div>
         <div class="ProjectCard" name="PortfolioSite">
           <button id="portfolio-button" class="GigButton">
-            GIG: Portfolio site
+            GIG: PORTFOLIO SITE
           </button>
         </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
+   
       
       <div class="ProjectCardHeader" id="page-3">Other Development</div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
-        <div class="ProjectCard" name="Test">
-          <button id="test-button" class="GigButton">
-            GIG: TEST
-          </button>
-        </div>
         <div class="ProjectCard" name="Test">
           <button id="test-button" class="GigButton">
             GIG: TEST
@@ -250,17 +181,6 @@
       </p>
     </section>
 
-    <section id="asyncmultiplayer-content" class="display-none">
-      <h3 class="title">GIG: AsyncMultiplayer</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, molestias iusto asperiores labore accusamus, cupiditate quo tempora autem pariatur voluptatibus doloremque deleniti dolorem corrupti architecto vel dolores exercitationem? Rerum, molestiae.
-        Rerum, qui. Cum mollitia nemo ipsam impedit blanditiis. Officiis harum veritatis eligendi ea consequatur dolore aliquam tempore adipisci. Maxime inventore debitis voluptatibus facere soluta hic suscipit labore rem. Consequuntur, soluta.
-        Quibusdam quo magnam et voluptatibus error ea laudantium veritatis consectetur. Vel consectetur voluptatem repellat corporis libero hic deleniti deserunt suscipit. Assumenda culpa rem, odit eveniet illum dolorem earum quaerat voluptatibus.
-        Sed, explicabo? Odio nulla quibusdam totam temporibus perferendis dolorem quisquam ratione, accusantium maiores quos facilis enim eius? Fugit, recusandae dolore debitis ea quidem libero esse quia, quis earum obcaecati et.
-        Quia!
-      </p>
-    </section>
-
     <section id="test-content" class="display-none">
       <h3 class="title">GIG: Test</h3>
       <p>
@@ -294,9 +214,6 @@
     const portfolioButton = document.getElementById('portfolio-button')
     const portfolioContent = document.getElementById('portfolio-content')
 
-    const asyncmultiplayerButton = document.getElementById('asyncmultiplayer-button')
-    const asyncmultiplayerContent = document.getElementById('asyncmultiplayer-content')
-
     const testButton = document.getElementById('test-button')
     const testContent = document.getElementById('test-content')
 
@@ -304,7 +221,6 @@
         pongContent,
         twinStickContent,
         rootsyContent,
-        asyncmultiplayerContent,
         blackJackContent,
         portfolioContent,
         testContent
@@ -328,10 +244,6 @@
 
     rootsyButton.addEventListener('click', () => {
       toggleContent(elementContents.rootsyContent)
-    })
-
-    asyncmultiplayerButton.addEventListener('click', () => {
-      toggleContent(elementContents.asyncmultiplayerContent)
     })
 
     testButton.addEventListener('click', () => {
