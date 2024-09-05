@@ -19,139 +19,94 @@
       </video>
     </div>
 
-    <nav>
-      <table class="menuTable" name="menuTable">
-        <tbody>
-          <tr>
-            <td></td>
+    <nav class="navBar">
+      <div>
+        <!-- TODO: needs to close the nav menu -->
+        <form action="" class="navButton">
+          <button id="menuButton" class="navMenuClose">-</button>
+        </form>
+      </div>
 
-            <td class="cbTableCell">
-              <form action="./Pages/backstoryPage.html">
-                <button class="cybr-btn">
-                  Character backstory <span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch"
-                    >Character backstory_</span
-                  >
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-
-            <td>
-              <form action="./Pages/levelPage.html">
-                <button class="cybr-btn">
-                  Character level <span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch"
-                    >Character level_</span
-                  >
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>
-              <form action="./Pages/blogPage.html">
-                <button class="cybr-btn">
-                  Blog <span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch">Blog_</span>
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-
-            <td rowspan="3" colspan="2" class="profile-column">
-              <img
-                src="./Assets/avatar2.png"
-                alt=""
-                class="pPicture"
-                name="profile picture"
-              />
-            </td>
-
-            <td>
-              <form action="./Pages/ncpdDataPage.html">
-                <button class="cybr-btn">
-                  Ncpd data<span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch">Ncpd data_</span>
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <form action="./Pages/gigsPage.html">
-                <button class="cybr-btn">
-                  Gig's <span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch">Gig's_</span>
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-
-            <td>
-              <!-- <button class="cybr-btn">
-                Coming soon <span aria-hidden="">_</span>
-                <span aria-hidden="" class="cybr-btn_glitch">Coming soon_</span>
-                <span aria-hidden="" class="cybr-btn_tag">2005</span>
-              </button> -->
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <!-- <button class="cybr-btn">
-                Coming soon <span aria-hidden="">_</span>
-                <span aria-hidden="" class="cybr-btn_glitch">Coming soon_</span>
-                <span aria-hidden="" class="cybr-btn_tag">2005</span>
-              </button> -->
-            </td>
-
-            <td>
-              <form action="./Pages/infoPage.html">
-                <button class="cybr-btn">
-                  Character info <span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch"
-                    >Character info_</span
-                  >
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-          </tr>
-
-          <tr>
-            <td></td>
-
-            <td>
-              <form action="./Pages/contactInfo.html">
-                <button class="cybr-btn">
-                  Cyber contact<span aria-hidden="">_</span>
-                  <span aria-hidden="" class="cybr-btn_glitch"
-                    >Cyber contact_</span
-                  >
-                  <span aria-hidden="" class="cybr-btn_tag">2005</span>
-                </button>
-              </form>
-            </td>
-
-            <td>
-              <!-- <button class="cybr-btn">
-                Coming soon <span aria-hidden="">_</span>
-                <span aria-hidden="" class="cybr-btn_glitch">Coming soon_</span>
-                <span aria-hidden="" class="cybr-btn_tag">2005</span>
-              </button> -->
-            </td>
-
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </nav>
+      <div id="navMenuParent" class="menuTable" name="menuTable">
+        <form action="./Pages/backstoryPage.html" class="navButton">
+          <button class="cybr-btn">
+            Character backstory <span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch"
+              >Character backstory_</span
+            >
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/levelPage.html"class="navButton">
+          <button class="cybr-btn">
+            Character level <span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch"
+              >Character level_</span
+            >
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/blogPage.html"class="navButton">
+          <button class="cybr-btn">
+            Blog <span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch">Blog_</span>
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/ncpdDataPage.html"class="navButton">
+          <button class="cybr-btn">
+            Ncpd data<span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch">Ncpd data_</span>
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/gigsPage.html"class="navButton">
+          <button class="cybr-btn">
+            Gig's <span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch">Gig's_</span>
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/contactInfo.html"class="navButton">
+          <button class="cybr-btn">
+            Cyber contact<span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch"
+              >Cyber contact_</span
+            >
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+        <form action="./Pages/infoPage.html"class="navButton">
+          <button class="cybr-btn">
+            Character info <span aria-hidden="">_</span>
+            <span aria-hidden="" class="cybr-btn_glitch"
+              >Character info_</span
+            >
+            <span aria-hidden="" class="cybr-btn_tag">2005</span>
+          </button>
+        </form>
+       
+          <div class="navSociales">
+              <h4>Social's</h4>
+              <a href="https://nl.linkedin.com/">
+                  <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" class="navIcon"/>
+              </a>
+              <a href="https://www.instagram.com/">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="navIcon"/>
+              </a>
+              <a href="mailto:someone@example.com">
+                  <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="navIcon"/>
+              </a>
+          </div>
+      </div>
+  </nav>
+  <div class="profileDiv">   
+    <img
+    src="./Assets/avatar2.png"
+    alt=""
+    class="pPicture"
+    name="profile picture"
+     />
+  </div>
   </body>
 </html>

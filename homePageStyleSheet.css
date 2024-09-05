@@ -1,42 +1,28 @@
 /* Base styles */
-
 @font-face {
   font-family: Cyber;
   src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
   font-display: swap;
 }
 
+
+body{
+  display: flex;
+  margin: 0px;
+}
+
 .myVideo {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: -1;
   min-width: 100%;
   min-height: 100%;
 }
 
-/* nav {
-  justify-content: center;
-  position: relative;
-  display: flex;
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  margin: auto;
-  font-size: 20px;
-}
-
-body {
+.profileDiv{
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  font-family: 'Cyber', sans-serif;
-  min-height: 100vh;
-}
-
-.profile-column {
-  text-align: center;
+  flex-direction: column;
 }
 
 .pPicture {
@@ -46,29 +32,82 @@ body {
   padding-bottom: 40px;
 }
 
-.menuTable {
+.navButton{ 
+  margin-bottom: 25px; 
+}
+
+.navBar{
+  margin: 10px;
   position: relative;
-  margin: 50px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  width: 100%;
-  max-width: 400px;
   box-shadow: 0 0 50px purple;
   backdrop-filter: blur(3px);
-}
-
-.menuTable, th, td {
   padding: 12px 15px;
   text-align: left;
+  display: block;
+  width: 300px;
+  height: 100%;
 }
 
-.cbTableCell{
-  position: absolute;
+.navSociales{
+  background-color: aqua;
+  display: block;
+  color: white;
+  width: 100%;
 }
 
-.menuTable tbody tr {
-  border-bottom: 1px solid #dddddd;
-} */
+.navIcon{
+  height: 25px;
+  width: 25px;
+}
+
+.navMenuClose{
+  border: none;
+  background-color: none;
+  color: white;
+}
+.menuTable{
+  width: 100%;
+}
+
+.closeNav{
+  display: none;
+}
+
+.openNav{
+  display: block;
+}
 
 /* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  nav{
+    height: 500px;
+  }
+  .menuTable {
+    position: relative;
+    margin: 50px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 50px purple;
+    backdrop-filter: blur(3px);
+  }
 
+td{ max-width: 100px;}
+}
+
+@media screen and (min-width: 600px) {
+  
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
