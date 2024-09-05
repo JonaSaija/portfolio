@@ -1,24 +1,23 @@
-@font-face {
-  font-family: Cyber;
-  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
-  font-display: swap;
-}
-
-nav{
+/* Base styles */
+nav {
   justify-content: center;
-  position: relative ;
+  position: relative;
   display: flex;
-  width: 900px;
-  height: 940px;
+  width: 100%;
+  max-width: 900px; /* Limit maximum width */
+  height: auto; /* Use auto to avoid fixed heights */
   margin: auto;
   font-size: 20px;
 }
 
-body{
-  display: fixed;
-  margin:auto;
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   align-items: center;
   font-family: 'Cyber', sans-serif;
+  min-height: 100vh;
 }
 
 .profile-column {
@@ -33,30 +32,75 @@ body{
   min-height: 100%;
 }
 
-.pPicture{
+.pPicture {
   min-width: 200px;
   height: 300px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.menuTable{
-  position: fixed;
+.menuTable {
+  position: relative; /* Changed from fixed for responsiveness */
   border-collapse: collapse;
-  margin: 200px 0;
+  margin: 50px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 0 50px purple;
   backdrop-filter: blur(3px);
 }
 
-.menuTable, th,
-td {
+.menuTable, th, td {
   padding: 12px 15px;
+  text-align: left;
 }
 
-.menuTable, tbody tr {
-  border-bottom: 1px;
+.menuTable tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .pPicture {
+    width: 100%; /* Adjust to fit smaller screens */
+    height: auto;
+  }
+  
+  .menuTable {
+    width: 100%; /* Take up the entire screen width */
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    font-size: 16px;
+  }
+  
+  .menuTable {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    font-size: 14px;
+  }
+
+  .menuTable {
+    font-size: 0.75em;
+    padding: 6px;
+  }
+
+  .pPicture {
+    min-width: 150px;
+    height: auto;
+  }
+}
