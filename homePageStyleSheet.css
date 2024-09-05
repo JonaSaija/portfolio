@@ -1,11 +1,26 @@
 /* Base styles */
-nav {
+
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* nav {
   justify-content: center;
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 900px; /* Limit maximum width */
-  height: auto; /* Use auto to avoid fixed heights */
+  max-width: 900px;
+  height: auto;
   margin: auto;
   font-size: 20px;
 }
@@ -24,14 +39,6 @@ body {
   text-align: center;
 }
 
-.myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .pPicture {
   min-width: 200px;
   height: 300px;
@@ -40,8 +47,7 @@ body {
 }
 
 .menuTable {
-  position: relative; /* Changed from fixed for responsiveness */
-  border-collapse: collapse;
+  position: relative;
   margin: 50px 0;
   font-size: 0.9em;
   font-family: sans-serif;
@@ -56,51 +62,13 @@ body {
   text-align: left;
 }
 
+.cbTableCell{
+  position: absolute;
+}
+
 .menuTable tbody tr {
   border-bottom: 1px solid #dddddd;
-}
+} */
 
 /* Responsive adjustments */
-@media screen and (max-width: 900px) {
-  nav {
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .pPicture {
-    width: 100%; /* Adjust to fit smaller screens */
-    height: auto;
-  }
-  
-  .menuTable {
-    width: 100%; /* Take up the entire screen width */
-    margin: 50px auto;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  nav {
-    font-size: 16px;
-  }
-  
-  .menuTable {
-    font-size: 0.8em;
-    padding: 8px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  nav {
-    font-size: 14px;
-  }
-
-  .menuTable {
-    font-size: 0.75em;
-    padding: 6px;
-  }
-
-  .pPicture {
-    min-width: 150px;
-    height: auto;
-  }
-}
