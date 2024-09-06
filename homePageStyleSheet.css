@@ -13,8 +13,6 @@ body{
 
 .myVideo {
   position: fixed;
-  right: 0;
-  bottom: -1;
   min-width: 100%;
   min-height: 100%;
 }
@@ -26,6 +24,7 @@ body{
 }
 
 .pPicture {
+  position:relative;
   min-width: 200px;
   height: 300px;
   padding-top: 40px;
@@ -99,7 +98,7 @@ body{
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 620px) {
   nav{
     height: 500px;
   }
@@ -113,31 +112,17 @@ body{
     box-shadow: 0 0 50px purple;
     backdrop-filter: blur(3px);
   }
-}
-
-.changeBackstoryTextSmallerScreen::after{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  content: "BACKSTORY _";
-  margin: 0px;
-}
-.changeLevelTextSmallerScreen::after{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  content: "LEVEL _";
-  margin:0px;
-}
-
-@media screen and (min-width: 600px) {
   
-}
-@media screen and (min-width: 768px) {
-  
-}
-@media screen and (min-width: 992px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
+  .changeBackstoryTextSmallerScreen::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    content: "BACKSTORY _";
+    margin: 0px;
+  }
+  .changeLevelTextSmallerScreen::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    content: "LEVEL _";
+    margin:0px;
+  }
 }
