@@ -50,11 +50,17 @@ body{
   height: 100%;
 }
 
-.navSociales{
-  background-color: aqua;
+.navSocial{
+  background-color: rgba(0, 255, 255, 0.397);
+  text-align: center;
+  color: aliceblue;
   display: block;
-  color: white;
   width: 100%;
+}
+
+.navSocialIcons{
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .navIcon{
@@ -79,8 +85,21 @@ body{
   display: block;
 }
 
+.changeBackstoryTextSmallerScreen::after{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin: 0px;
+  content: "CHARACTER BACKSTORY _";
+}
+.changeLevelTextSmallerScreen::after{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin:0px; 
+  content: "CHARACTER LEVEL _";
+}
+
 /* Responsive adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 619px) {
   nav{
     height: 500px;
   }
@@ -94,8 +113,19 @@ body{
     box-shadow: 0 0 50px purple;
     backdrop-filter: blur(3px);
   }
+}
 
-td{ max-width: 100px;}
+.changeBackstoryTextSmallerScreen::after{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  content: "BACKSTORY _";
+  margin: 0px;
+}
+.changeLevelTextSmallerScreen::after{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  content: "LEVEL _";
+  margin:0px;
 }
 
 @media screen and (min-width: 600px) {
