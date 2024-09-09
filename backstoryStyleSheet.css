@@ -8,7 +8,7 @@ body {
   margin: auto;
   font-family: "Cyber", sans-serif;
 
-  background-image: url(../../portfolio/Assets/bg.jpg);
+  background-image: url(../Assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -17,7 +17,7 @@ body {
 .TimelineBG {
   margin: 100px auto auto 350px;
   display: block;
-  background-image: url(../../portfolio/Assets/JonaTimelinePortfolio.png);
+  background-image: url(../Assets/JonaTimelinePortfolio.png);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgba(252, 236, 10, 0.822); */
