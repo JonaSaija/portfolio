@@ -11,64 +11,88 @@
 </head>
 
 <body>
-    <nav class="SideNav">
-      <form action="../../portfolio/index.html" class="SideNavButtons">
+  <nav class="navBar">
+    <div>
+      <!-- TODO: needs to close the nav menu -->
+      <a  class="navButton">
+        <button id="menuButton" class="navMenuClose">-</button>
+      </a>
+    </div>
+
+    <!-- Buttons from the nav menu -->
+    <div id="navMenuParent" class="menuTable" name="menuTable">
+      <form action="../index.html"class="navButton">
         <button class="cybr-btn">
-          Home Page<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Home Page_</span>
+          Homepage<span aria-hidden="">_</span>
+          <span aria-hidden="" class="cybr-btn_glitch">Homepage_</span>
           <span aria-hidden="" class="cybr-btn_tag">2005</span>
         </button>
       </form>
-      <form action="../../portfolio/Pages/backstoryPage.html" class="SideNavButtons">
+      <form action="./levelPage.html"class="navButton">
         <button class="cybr-btn">
-          Backstory Page<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Backstory Page_</span>
+          <div class="changeLevelTextSmallerScreen"/>
+          <span aria-hidden="" class="cybr-btn_glitch"
+            >
+          <div class="changeLevelTextSmallerScreen"/>
+          </span
+          >
           <span aria-hidden="" class="cybr-btn_tag">2005</span>
         </button>
       </form>
-      <form action="../../portfolio/Pages/levelPage.html" class="SideNavButtons">
-        <button class="cybr-btn">
-          Level Page<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Level Page_</span>
-          <span aria-hidden="" class="cybr-btn_tag">2005</span>
-        </button>
-      </form>
-      <form action="../../portfolio/Pages/gigsPage.html" class="SideNavButtons">
-        <button class="cybr-btn">
-          Gig's<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Gig's_</span>
-          <span aria-hidden="" class="cybr-btn_tag">2005</span>
-        </button>
-      </form>
-      <form action="../../portfolio/Pages/ncpdDataPage.html" class="SideNavButtons">
-        <button class="cybr-btn">
-          Ncpd Data<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Ncpd Data_</span>
-          <span aria-hidden="" class="cybr-btn_tag">2005</span>
-        </button>
-      </form>
-      <form action="../../portfolio/Pages/infoPage.html" class="SideNavButtons">
-        <button class="cybr-btn">
-          Character Info<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Character Info_</span>
-          <span aria-hidden="" class="cybr-btn_tag">2005</span>
-        </button>
-      </form>
-      <form action="../../portfolio/Pages/contactInfo.html" class="SideNavButtons">
-        <button class="cybr-btn">
-          Cyber Contact<span aria-hidden="">_</span>
-          <span aria-hidden="" class="cybr-btn_glitch">Cyber Contact_</span>
-          <span aria-hidden="" class="cybr-btn_tag">2005</span>
-        </button>
-      </form>
-      <form action="../../portfolio/Pages/blogPage.html" class="SideNavButtons">
+      <form action="./blogPage.html"class="navButton">
         <button class="cybr-btn">
           Blog<span aria-hidden="">_</span>
           <span aria-hidden="" class="cybr-btn_glitch">Blog_</span>
           <span aria-hidden="" class="cybr-btn_tag">2005</span>
         </button>
       </form>
-    </nav>
+      <form action="./ncpdDataPage.html"class="navButton">
+        <button class="cybr-btn">
+          Ncpd data<span aria-hidden="">_</span>
+          <span aria-hidden="" class="cybr-btn_glitch">Ncpd data_</span>
+          <span aria-hidden="" class="cybr-btn_tag">2005</span>
+        </button>
+      </form>
+      <form action="./gigsPage.html"class="navButton">
+        <button class="cybr-btn">
+          Gig's<span aria-hidden="">_</span>
+          <span aria-hidden="" class="cybr-btn_glitch">Gig's_</span>
+          <span aria-hidden="" class="cybr-btn_tag">2005</span>
+        </button>
+      </form>
+      <form action="./infoPage.html"class="navButton">
+        <button class="cybr-btn">
+          Cyber contact<span aria-hidden="">_</span>
+          <span aria-hidden="" class="cybr-btn_glitch"
+            >Cyber contact_</span
+          >
+          <span aria-hidden="" class="cybr-btn_tag">2005</span>
+        </button>
+      </form>
+      <form action="./infoPage.html"class="navButton">
+        <button class="cybr-btn">
+          Character info<span aria-hidden="">_</span>
+          <span aria-hidden="" class="cybr-btn_glitch"
+            >Character info_</span
+          >
+          <span aria-hidden="" class="cybr-btn_tag">2005</span>
+        </button>
+      </form>
+     
+        <div class="navSocial">
+            <h4>Social's</h4>
+            <a href="https://nl.linkedin.com/" class="navSocialIcons" target="_blank">
+                <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" class="navIcon"/>
+            </a>
+            <a href="https://www.instagram.com/" class="navSocialIcons" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="navIcon"/>
+            </a>
+            <a href="mailto:someone@example.com" class="navSocialIcons" target="_blank">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="navIcon"/>
+            </a>
+        </div>
+    </div>
+</nav>
   
   <main>
 
