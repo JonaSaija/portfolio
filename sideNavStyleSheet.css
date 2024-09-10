@@ -31,9 +31,9 @@
   }
   
   .navSocialIcons{
+    text-decoration:none;
     margin-left: 5px;
     margin-right: 5px;
-    text-decoration: none;
   }
   
   .navIcon{
@@ -41,10 +41,29 @@
     width: 25px;
   }
   
+.closeNavButtonDiv{
+  width: 100%;
+}
+
   .navMenuClose{
+    width: 100%;
     border: none;
-    background-color: none;
+    background-color: transparent;
     color: white;
+  }
+  .navMenuClose:hover{
+    cursor: pointer;
+    animation: hover 2s infinite;
+  }
+
+  @keyframes hover{
+    0%{
+      background-color: aliceblue;
+    }
+
+    100%{
+      background-color: red;
+    }
   }
   
   .closeNav{
@@ -59,13 +78,13 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin: 0px;
-    content: "CHARACTER BACKSTORY _";
+    content: "CHARACTER BACKSTORY_";
   }
   .changeLevelTextSmallerScreen::after{
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin:0px; 
-    content: "CHARACTER LEVEL _";
+    content: "CHARACTER LEVEL_";
   }
   
   /* Responsive adjustments */
@@ -77,13 +96,13 @@
     .changeBackstoryTextSmallerScreen::after{
       margin-block-start: 0em;
       margin-block-end: 0em;
-      content: "BACKSTORY _";
+      content: "BACKSTORY_";
       margin: 0px;
     }
     .changeLevelTextSmallerScreen::after{
       margin-block-start: 0em;
       margin-block-end: 0em;
-      content: "LEVEL _";
+      content: "LEVEL_";
       margin:0px;
     }
   }

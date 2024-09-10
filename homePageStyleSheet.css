@@ -5,22 +5,14 @@
   font-display: swap;
 }
 
-
-body{
-  display: flex;
-  margin: 0px;
-}
-
 .myVideo {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
 }
-
 .profileDiv{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
 .pPicture {
@@ -31,98 +23,7 @@ body{
   padding-bottom: 40px;
 }
 
-.navButton{ 
-  margin-bottom: 25px; 
-}
-
-.navBar{
-  margin: 10px;
-  position: relative;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  box-shadow: 0 0 50px purple;
-  backdrop-filter: blur(3px);
-  padding: 12px 15px;
-  text-align: left;
-  display: block;
-  width: 300px;
-  height: 100%;
-}
-
-.navSocial{
-  background-color: rgba(0, 255, 255, 0.397);
-  text-align: center;
-  color: aliceblue;
-  display: block;
-  width: 100%;
-}
-
-.navSocialIcons{
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.navIcon{
-  height: 25px;
-  width: 25px;
-}
-
-.navMenuClose{
-  border: none;
-  background-color: none;
-  color: white;
-}
-.menuTable{
-  width: 100%;
-}
-
-.closeNav{
-  display: none;
-}
-
-.openNav{
-  display: block;
-}
-
-.changeBackstoryTextSmallerScreen::after{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin: 0px;
-  content: "CHARACTER BACKSTORY _";
-}
-.changeLevelTextSmallerScreen::after{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin:0px; 
-  content: "CHARACTER LEVEL _";
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 620px) {
-  nav{
-    height: 500px;
-  }
-  .menuTable {
-    position: relative;
-    margin: 50px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    width: 100%;
-    max-height: 100%;
-    box-shadow: 0 0 50px purple;
-    backdrop-filter: blur(3px);
-  }
   
-  .changeBackstoryTextSmallerScreen::after{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    content: "BACKSTORY _";
-    margin: 0px;
-  }
-  .changeLevelTextSmallerScreen::after{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    content: "LEVEL _";
-    margin:0px;
-  }
 }
