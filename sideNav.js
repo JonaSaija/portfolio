@@ -11,7 +11,7 @@ class SideNav extends HTMLElement {
       container.innerHTML = `
        <nav class="navBar">
       <div class="closeNavButtonDiv">
-          <button id="menuButton" class="navMenuClose" onclick="toggle()">-</button>
+          <button id="menuButton" class="navMenuClose" onclick="toggle()">---------------------------</button>
       </div>
 
       <!-- Buttons from the nav menu -->
@@ -37,7 +37,7 @@ class SideNav extends HTMLElement {
 
         <form action="./blogPage.html"class="navButton">
           <button class="cybr-btn">
-            Blog<span aria-hidden="">_</span>
+            <span class="BlogButtonText"></span>
             <span aria-hidden="" class="cybr-btn_glitch">Blog_</span>
             <span aria-hidden="" class="cybr-btn_tag">2005</span>
           </button>
@@ -45,21 +45,21 @@ class SideNav extends HTMLElement {
 
         <form action="./ncpdDataPage.html"class="navButton">
           <button class="cybr-btn">
-            Ncpd data<span aria-hidden="">_</span>
+            <span class="NcpdDataButtonText"></span>
             <span aria-hidden="" class="cybr-btn_glitch">Ncpd data_</span>
             <span aria-hidden="" class="cybr-btn_tag">2005</span>
           </button>
         </form>
         <form action="./gigsPage.html"class="navButton">
           <button class="cybr-btn">
-            Gig's<span aria-hidden="">_</span>
+            <span class="GigsButtonText"></span>
             <span aria-hidden="" class="cybr-btn_glitch">Gig's_</span>
             <span aria-hidden="" class="cybr-btn_tag">2005</span>
           </button>
         </form>
         <form action="./contactInfo.html"class="navButton">
           <button class="cybr-btn">
-            Cyber contact<span aria-hidden="">_</span>
+            <span class="CyberContactButtonText"></span>
             <span aria-hidden="" class="cybr-btn_glitch"
               >Cyber contact_</span
             >
@@ -68,7 +68,7 @@ class SideNav extends HTMLElement {
         </form>
         <form action="./infoPage.html"class="navButton">
           <button class="cybr-btn">
-            Character info <span aria-hidden="">_</span>
+            <span class="CharacterInfoButtonText"></span>
             <span aria-hidden="" class="cybr-btn_glitch"
               >Character info_</span
             >
@@ -95,23 +95,40 @@ class SideNav extends HTMLElement {
       // Append the container directly to the custom element without Shadow DOM
       this.appendChild(container);
     }
+
+    getCurrentPage() {
+      // Get the current page's filename (e.g., 'index.html' from '/index.html' or './index.html')
+      return window.location.pathname.split('/Pages/').pop();
+    }
+  
+    getFormActionPage(actionUrl) {
+      // Get the filename from the form action attribute (e.g., 'index.html' from './index.html')
+      return actionUrl.split('./').pop();
+    }
+    
     connectedCallback() {
         this.changeCurrentPageButton();
       }
-    
+      
       changeCurrentPageButton() {
-        const currentPage = window.location.pathname; // Get the current page path
+        const currentPage = this.getCurrentPage(); // Get the current page path
         const forms = this.querySelectorAll('form');
-    
+        
         forms.forEach(form => {
-          const formAction = form.getAttribute('action'); // Get form action attribute
-          if (currentPage.endsWith(formAction)) { // Check if the current page matches the form action
+          let formAction = this.getFormActionPage(form.getAttribute('action')); // Get form action attribute
+          
+          console.log("Value of current page:" + currentPage)
+          console.log("Value of button action:" + formAction)
+          if (currentPage === formAction) { // Check if the current page matches the form action
             const buttonText = form.querySelector('span');
-            formAction = "../index.html"
-            buttonText.textContent = "Homepage_"; // Changes the button of that page to homepage button.
+            console.log("Value of button/buttontext:" + buttonText.className)
+            formAction = "/index.html"
+            console.log("Value of button action must have changed:" + formAction)
+            buttonText.className = "changeToHomepage"; // Changes the button of that page to homepage button.
+            console.log("Value of button/buttontext must have changed:" + buttonText.className)
           }
         });
-  }
+      }
 }
   
   // Register the custom element

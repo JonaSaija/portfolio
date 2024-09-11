@@ -74,6 +74,10 @@
     display: block;
   }
   
+  .changeToHomepage::after{
+    content: "HOMEPAGE_";
+  }
+
   .changeBackstoryTextSmallerScreen::after{
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -85,6 +89,36 @@
     margin-block-end: 0em;
     margin:0px; 
     content: "CHARACTER LEVEL_";
+  }
+  .BlogButtonText::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+    content: "BLOG_";
+  }
+  .NcpdDataButtonText::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+    content: "NCPD DATA_";
+  }
+  .GigsButtonText::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+    content: "GIG'S_";
+  }
+  .CyberContactButtonText::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+    content: "CYBER CONTACT_";
+  }
+  .CharacterInfoButtonText::after{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0px;
+    content: "CHARACTER INFO_";
   }
   
   /* Responsive adjustments */
@@ -104,6 +138,18 @@
       margin-block-end: 0em;
       content: "LEVEL_";
       margin:0px;
+    }
+    .CyberContactButtonText::after{
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin: 0px;
+      content: "CONTACT_";
+    }
+    .CharacterInfoButtonText::after{
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin: 0px;
+      content: "INFO_";
     }
   }
   
