@@ -83,13 +83,13 @@ class SideNav extends HTMLElement {
           <div class="navSocial">
               <h4>Social's</h4>
               <a href="https://nl.linkedin.com/" class="navSocialIcons" target="_blank">
-                  <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" class="navIcon"/>
+                  <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" class="navIcon" alt="LogoLinkedIn"/>
               </a>
               <a href="https://www.instagram.com/" class="navSocialIcons" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="navIcon"/>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="navIcon" alt="LogoInstagram"/>
               </a>
               <a href="mailto:someone@example.com" class="navSocialIcons" target="_blank">
-                  <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="navIcon"/>
+                  <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="navIcon" alt="LogoOutlook"/>
               </a>
           </div>
       </div>
