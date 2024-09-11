@@ -7,7 +7,7 @@
 body{
   height: 800px;
   font-family: 'Cyber',sans-serif;
-  background-image: url(../Assets/CyberpunkBg.jpg);
+  background-image: url(./Assets/CyberpunkBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;

@@ -21,6 +21,10 @@
     width: 300px;
     height: 100%;
   }
+
+  .default{
+    display: auto;
+  }
   
   .navSocial{
     background-color: rgba(0, 255, 255, 0.397);
@@ -125,6 +129,10 @@
   @media screen and (max-width: 620px) {
     nav{
       height: 500px;
+    }
+
+    .changeToHomepage::after{
+      content: "HOMEPAGE_";
     }
     
     .changeBackstoryTextSmallerScreen::after{
